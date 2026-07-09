@@ -162,20 +162,20 @@ Pretraining corpora are not just data sources; they define which biological regu
 
 Benchmarks should be interpreted as biological probes. A strong local classification score does not by itself establish long-range regulatory modeling, perturbation response, or mechanistic sequence-to-function understanding.
 
-| Benchmark | Year | Task type | Input length |  |
+| Benchmark | Year | Task type | Input length | Links |
 | --- | --- | --- | --- | --- |
-| Genomic Benchmarks | 2023 | Sequence classification | Hundreds bp to several kb |  |
-| GUE / GUE+ | 2023/2024 | Multi-task sequence classification | 70 bp to 10 kb |  |
-| Nucleotide Transformer Benchmark | 2023/2025 | Functional genomics prediction | 6 kb to 12 kb |  |
-| BEND | 2023/2024 | Genome annotation prediction | Local windows to long genomic intervals |  |
-| GenBench | 2024 | Multi-domain genomic prediction | 30 bp to 196 kb |  |
-| DART-Eval | 2024/2025 | Regulatory DNA prediction | Regulatory elements and local contexts |  |
-| Long-Range Benchmark (LRB) | 2023-2025 | Long-context expression and variant prediction | Tens kb to hundreds kb |  |
-| DNALONGBENCH | 2025 | Long-range regulatory prediction | 10 kb to 1 Mb |  |
-| Benchmarking DNA FMs | 2025 | Cross-task embedding benchmark | 64 bp to 500 kb |  |
-| DeepSEA / Enformer-style | 2015/2021 | Functional genomics prediction | 1 kb to 196 kb |  |
-| Variant-effect and clinical benchmarks | 2013-2025 | Variant-effect prediction | Local windows to hundreds kb |  |
-| NABench | 2025 | Fitness prediction | Assay-dependent |  |
+| Genomic Benchmarks | 2023.05 | Sequence classification | Hundreds bp to several kb | 📄 [Paper](https://doi.org/10.1186/s12863-023-01123-8)<br>💻 [Code](https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks) |
+| GUE / GUE+ | 2023.06 / 2024.03 | Multi-task sequence classification | 70 bp to 10 kb | 📄 [Paper](https://arxiv.org/abs/2306.15006)<br>💻 [Code/Data](https://github.com/MAGICS-LAB/DNABERT_2#2-model-and-data) |
+| Nucleotide Transformer Benchmark | 2023.01 / 2024.11 | Functional genomics prediction | 6 kb to 12 kb | 📄 [Paper](https://doi.org/10.1038/s41592-024-02523-z)<br>🤗 [Data](https://huggingface.co/datasets/InstaDeepAI/nucleotide_transformer_downstream_tasks)<br>🤗 [Revised data](https://huggingface.co/datasets/InstaDeepAI/nucleotide_transformer_downstream_tasks_revised) |
+| BEND | 2023.11 / 2024.05 | Genome annotation prediction | Local windows to long genomic intervals | 📄 [Paper](https://arxiv.org/abs/2311.12570)<br>💻 [Code/Data](https://github.com/frederikkemarin/BEND) |
+| GenBench | 2024.06 | Multi-domain genomic prediction | 30 bp to 196 kb | 📄 [Paper](https://arxiv.org/abs/2406.01627) |
+| DART-Eval | 2024.12 | Regulatory DNA prediction | Regulatory elements and local contexts | 📄 [Paper](https://arxiv.org/abs/2412.05430)<br>💻 [Code](https://github.com/kundajelab/DART-Eval) |
+| Long-Range Benchmark (LRB) | 2023.06-2025.01 | Long-context expression and variant prediction | Tens kb to hundreds kb | 📄 [HyenaDNA](https://arxiv.org/abs/2306.15794)<br>📄 [DNALongBench preprint](https://www.biorxiv.org/content/10.1101/2025.01.06.631595v1) |
+| DNALONGBENCH | 2025.01 / 2025.11 | Long-range regulatory prediction | 10 kb to 1 Mb | 📄 [Paper](https://doi.org/10.1038/s41467-025-65077-4)<br>💻 [Code/Data](https://github.com/ma-compbio/DNALONGBENCH) |
+| Benchmarking DNA FMs | 2024.08 / 2025.11 | Cross-task embedding benchmark | 64 bp to 500 kb | 📄 [Paper](https://doi.org/10.1038/s41467-025-65823-8)<br>📄 [Preprint](https://doi.org/10.1101/2024.08.16.608288) |
+| DeepSEA / Enformer-style | 2015.08 / 2021.10 | Functional genomics prediction | 1 kb to 196 kb | 📄 [DeepSEA paper](https://www.nature.com/articles/nmeth.3547)<br>🌐 [DeepSEA server](https://deepsea.princeton.edu/)<br>📄 [Enformer paper](https://www.nature.com/articles/s41592-021-01252-x)<br>💻 [Enformer code](https://github.com/google-deepmind/deepmind-research/tree/master/enformer) |
+| Variant-effect and clinical benchmarks | 2013.11-2025.01 | Variant-effect prediction | Local windows to hundreds kb | 🌐 [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)<br>🌐 [CAGI](https://genomeinterpretation.org/)<br>📦 [MaveDB](https://www.mavedb.org/) |
+| NABench | 2025.11 | Fitness prediction | Assay-dependent | 📄 [Paper](https://arxiv.org/abs/2511.02888)<br>💻 [Code/Data](https://github.com/mrzzmrzz/NABench) |
 
 ## Evidence Ladder
 
