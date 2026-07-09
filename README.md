@@ -19,7 +19,7 @@ This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an
 - 🧬 **A systematic DNAFM survey**, covering model architectures, pretraining objectives, tokenization strategies, training corpora, benchmark protocols, and downstream biological tasks.
 - 🧭 **A foundation-capability framework**, asking what makes a DNA model genuinely foundational beyond parameter scale, context length, and local fine-tuning scores.
 - 🔬 **Evidence criteria included**: long-range regulatory use, DNA-specific biological priors, perturbational generalization, evolutionary supervision, and modular biological AI systems.
-- 📚 **Curated resources included**: representative DNA foundation models, pretraining corpus categories, evaluation benchmarks, review figures, and a graded evidence ladder for sequence-to-function claims.
+- 📚 **Curated resources included**: representative DNA foundation models, pretraining corpus categories, and evaluation benchmarks.
 - 🤝 **Community-driven**: found a missing model, benchmark, dataset, paper link, or correction? Feel free to open an issue or submit a pull request.
 
 <p align="center">
@@ -28,7 +28,7 @@ This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an
 
 ## News
 
-- **[2026-07-09]** Initial README release with the review framework, model landscape, corpus taxonomy, benchmark map, and evidence ladder.
+- **[2026-07-09]** Initial README release with the review framework, model landscape, corpus taxonomy, and benchmark map.
 
 ## Contents
 
@@ -36,8 +36,6 @@ This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an
 - [DNA Foundation Models](#dna-foundation-models)
 - [Pretraining Corpora](#pretraining-corpora)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
-- [Evidence Ladder](#evidence-ladder)
-- [Figures](#figures)
 - [Contributing](#contributing)
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
@@ -177,31 +175,6 @@ Benchmarks should be interpreted as biological probes. A strong local classifica
 | Variant-effect and clinical benchmarks | 2013.11-2025.01 | Variant-effect prediction | Local windows to hundreds kb | 🌐 [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)<br>🌐 [CAGI](https://genomeinterpretation.org/)<br>📦 [MaveDB](https://www.mavedb.org/) |
 | NABench | 2025.11 | Fitness prediction | Assay-dependent | 📄 [Paper](https://arxiv.org/abs/2511.02888)<br>💻 [Code/Data](https://github.com/mrzzmrzz/NABench) |
 
-## Evidence Ladder
-
-<p align="center">
-  <img src="../figs/fig6_evidence_ladder.png" alt="Evidence ladder for DNA foundation model claims" width="100%">
-</p>
-
-Evidence for DNA foundation capability should be graded by what is actually tested:
-
-1. **Weak evidence**: parameter count, context length, pretraining corpus size, or average local benchmark performance.
-2. **Moderate evidence**: frozen-embedding transfer, multi-task functional genomics prediction, cross-species transfer, or long-context tasks with careful controls.
-3. **Strong evidence**: distance-stratified long-range regulatory evaluation, perturbation-aware variant-effect prediction, strict out-of-distribution splits, calibrated effect-size prediction, and interpretable biological attributions.
-4. **Highest evidence**: experimental validation through MPRA, CRISPRi, saturation mutagenesis, Perturb-seq, synthetic sequence design, or closed-loop model-guided experiments.
-
-## Figures
-
-| Figure | File | Main message |
-| --- | --- | --- |
-| Foundational capability framework | [`figs/fig1.png`](figs/fig1.png) | Scale alone does not define foundation capability. |
-| Model design landscape | [`figs/fig2_models.png`](../figs/fig2_models.png) | DNA foundation models have diversified across architectures, objectives, contexts, and corpora. |
-| Corpus signal and bias | [`figs/fig3_pretraining_corpus_bias_signal.png`](../figs/fig3_pretraining_corpus_bias_signal.png) | Each corpus type provides useful signal and systematic bias. |
-| Long-context regulatory use | [`figs/fig4_long_context_regulatory_use.png`](../figs/fig4_long_context_regulatory_use.png) | Long context is a prerequisite, not proof, of distal regulatory modeling. |
-| Biological priors | [`figs/fig5_biological_priors_vs_nlp.png`](../figs/fig5_biological_priors_vs_nlp.png) | DNA modeling requires priors that generic text modeling does not provide. |
-| Evidence ladder | [`figs/fig6_evidence_ladder.png`](../figs/fig6_evidence_ladder.png) | Stronger claims require perturbation, OOD evaluation, interpretability, and validation. |
-| Modular biological AI systems | [`figs/fig7_modular_biological_ai_system.png`](../figs/fig7_modular_biological_ai_system.png) | DNA models are likely to function as components in larger biological AI systems. |
-
 ## Contributing
 
 Contributions are welcome. Please open an issue or pull request if you find:
@@ -229,4 +202,10 @@ The public citation will be updated when the paper is released. For now, cite th
 
 ## Acknowledgements
 
-This README structure is inspired by community-maintained survey repositories such as `Awesome-WAM`, while the taxonomy, evidence criteria, corpus categories, benchmark map, and figures are based on the accompanying DNA foundation model review manuscript.
+We thank the researchers and open-source communities whose work has advanced DNA foundation models, genomic language modeling, regulatory sequence modeling, and sequence-to-function prediction. This repository builds upon publicly available papers, codebases, pretrained models, datasets, benchmarks, and tutorials released by the broader computational biology, genomics, and machine learning communities.
+
+We are especially grateful to the authors and maintainers of the DNA, RNA, nucleotide, regulatory-sequence, microbial, viral, plant, and cross-domain genome modeling resources curated in this repository. Their open scientific contributions make it possible to compare model architectures, pretraining corpora, evaluation protocols, and biological evidence across this rapidly evolving field.
+
+We also thank the community members who report missing models, update links, suggest benchmark corrections, improve taxonomy labels, and contribute discussions on what should qualify as a genuinely foundational DNA model. Feedback, issues, and pull requests are highly appreciated and will help keep this resource accurate, transparent, and useful for future research.
+
+If this repository is useful to your work, please consider citing the associated manuscript once available and starring the repository to support its continued maintenance.
