@@ -1,6 +1,10 @@
 <div align="center">
 
-# Awesome DNA Foundation Models
+<p align="center">
+  <img src="figures/DNA-Foundation-Models.png" alt="DNA Foundation Models logo" width="180">
+</p>
+
+<h1 align="center">Awesome DNA Foundation Models</h1>
 
 ### What Makes a DNA Foundation Model Foundational?
 
