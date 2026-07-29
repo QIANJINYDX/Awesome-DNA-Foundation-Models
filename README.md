@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="figures/DNA-Foundation-Models.png" alt="DNA Foundation Models logo" width="180">
+  <img src="figs/DNA-Foundation-Models-transparent.png" alt="DNA Foundation Models logo" width="180">
 </p>
 
 <h1 align="center">Awesome DNA Foundation Models</h1>
