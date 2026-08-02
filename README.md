@@ -11,7 +11,7 @@
 [![Paper](https://img.shields.io/badge/Paper-coming_soon-64748b)](#citation)
 [![arXiv](https://img.shields.io/badge/arXiv-coming_soon-b31b1b.svg)](#)
 [![PDF](https://img.shields.io/badge/PDF-local_draft-2563eb)](../latex/main.pdf)
-[![Project Page](https://img.shields.io/badge/Project_Page-coming_soon-0f766e)](#)
+[![Project Page](https://img.shields.io/badge/Project_Page-live-0f766e)](https://sii-agi4s.github.io/Awesome-DNA/)
 [![Contributions](https://img.shields.io/badge/Contributions-welcome-16a34a)](#contributing)
 
 **A curated survey repository for DNA foundation models, genomic pretraining corpora, benchmarks, and evidence criteria for sequence-to-function generalization.**
