@@ -6,33 +6,23 @@
 
 <h1 align="center">Awesome DNA Foundation Models</h1>
 
-### What Makes a DNA Foundation Model Foundational?
-
-[![Paper](https://img.shields.io/badge/Paper-coming_soon-64748b)](#citation)
-[![arXiv](https://img.shields.io/badge/arXiv-coming_soon-b31b1b.svg)](#)
-[![PDF](https://img.shields.io/badge/PDF-local_draft-2563eb)](../latex/main.pdf)
 [![Project Page](https://img.shields.io/badge/Project_Page-live-0f766e)](https://sii-agi4s.github.io/Awesome-DNA/)
 [![Contributions](https://img.shields.io/badge/Contributions-welcome-16a34a)](#contributing)
 
-**A curated survey repository for DNA foundation models, genomic pretraining corpora, benchmarks, and evidence criteria for sequence-to-function generalization.**
+**A curated resource for DNA foundation models, genomic pretraining corpora, and evaluation benchmarks.**
 
 </div>
 
-This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an emerging class of pretrained genomic sequence models for learning sequence representations, regulatory signals, and sequence-to-function relationships. We will keep this repo continuously updated as the field evolves.
+This repository collects links and metadata for **DNA Foundation Models (DNAFMs)**, genomic pretraining corpora, and evaluation resources. We will keep it continuously updated as the field evolves.
 
-- 🧬 **A systematic DNAFM survey**, covering model architectures, pretraining objectives, tokenization strategies, training corpora, benchmark protocols, and downstream biological tasks.
-- 🧭 **A foundation-capability framework**, asking what makes a DNA model genuinely foundational beyond parameter scale, context length, and local fine-tuning scores.
-- 🔬 **Evidence criteria included**: long-range regulatory use, DNA-specific biological priors, perturbational generalization, evolutionary supervision, and modular biological AI systems.
-- 📚 **Curated resources included**: representative DNA foundation models, pretraining corpus categories, and evaluation benchmarks.
+- 🧬 **Model resources**: architectures, pretraining objectives, tokenization strategies, and downstream biological tasks.
+- 📚 **Curated corpora**: representative genomic pretraining datasets and corpus categories.
+- 📊 **Evaluation benchmarks**: benchmark protocols and task-specific resources.
 - 🤝 **Community-driven**: found a missing model, benchmark, dataset, paper link, or correction? Feel free to open an issue or submit a pull request.
-
-<p align="center">
-  <img src="figs/fig1.png" alt="Operational framework for foundational capability in DNA foundation models" width="100%">
-</p>
 
 ## News
 
-- **[2026-07-09]** Initial README release with the review framework, model landscape, corpus taxonomy, and benchmark map.
+- **[2026-07-09]** Initial README release with the model landscape, corpus catalog, and benchmark map.
 
 ## Contents
 
@@ -41,7 +31,6 @@ This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an
 - [Pretraining Corpora](#pretraining-corpora)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [Contributing](#contributing)
-- [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
 
 ## Tag Legend
@@ -65,16 +54,9 @@ This repository accompanies our survey on **DNA Foundation Models (DNAFMs)**, an
 - ![Plant](https://img.shields.io/badge/Corpus-Plant--specific-65a30d) plant-focused genomes or plant regulatory sequence data
 - ![Cross-domain](https://img.shields.io/badge/Corpus-Cross--domain-4338ca) bacteria, archaea, eukaryotes, viruses, organelles, and metagenomes
 
-### Evidence tags
-
-- ![Long-range](https://img.shields.io/badge/Evidence-Long--range-0f766e) enhancer-gene, eQTL, chromatin contact, TAD, or distal variant evidence
-- ![Biological priors](https://img.shields.io/badge/Evidence-Biological_priors-2563eb) reverse complementarity, coordinates, coding frame, conservation, cell state, or 3D genome priors
-- ![Perturbation](https://img.shields.io/badge/Evidence-Perturbation-b91c1c) variant effect, mutagenesis, CRISPR, MPRA, eQTL, or design validation
-- ![OOD](https://img.shields.io/badge/Evidence-OOD_splits-7c2d12) chromosome, species, gene, cell-type, variant-class, or clade-level splits
-
 ## DNA Foundation Models
 
-The table below follows the model landscape summarized in the manuscript. Official paper, code, and model links are shown only when verified; unavailable resources are omitted.
+The table below provides a curated overview of DNA foundation models. Official paper, code, and model links are shown only when verified; unavailable resources are omitted.
 
 | Model | Model Type | Pretraining Corpus | Released | Links |
 | --- | --- | --- | --- | --- |
@@ -147,7 +129,7 @@ The table below follows the model landscape summarized in the manuscript. Offici
 
 ## Pretraining Corpora
 
-Pretraining corpora are not just data sources; they define which biological regularities a model can access and which biases it may inherit.
+The table below lists representative genomic pretraining corpora and data resources.
 
 | Representative sources | Data composition | Links |
 | --- | --- | --- |
@@ -191,7 +173,7 @@ Pretraining corpora are not just data sources; they define which biological regu
 
 ## Benchmarks and Evaluation
 
-Benchmarks should be interpreted as biological probes. A strong local classification score does not by itself establish long-range regulatory modeling, perturbation response, or mechanistic sequence-to-function understanding.
+The table below lists representative benchmarks and evaluation resources for genomic sequence models.
 
 | Benchmark | Year | Task type | Input length | Links |
 | --- | --- | --- | --- | --- |
@@ -225,27 +207,14 @@ Contributions are welcome. Please open an issue or pull request if you find:
 - an incorrect tag, corpus category, context length, parameter count, or objective;
 - a benchmark result that should be interpreted with stronger leakage, split, or biological-scope caveats.
 
-When adding a paper, please include the source link and avoid unsupported claims about foundation capability. Prefer bounded descriptions such as `tested on long-range expression prediction` over broad claims such as `understands regulation`.
-
-## Citation
-
-The public citation will be updated when the paper is released. For now, cite the manuscript as:
-
-```bibtex
-@article{ye2026dnafoundationmodels,
-  title   = {What Makes a DNA Foundation Model Foundational? Long-Range Regulation, Biological Priors, and Perturbational Generalization},
-  author  = {Ye, Dong-Xin},
-  year    = {2026},
-  note    = {Manuscript in preparation}
-}
-```
+When adding a resource, please include a source link and a concise, verifiable description.
 
 ## Acknowledgements
 
 We thank the researchers and open-source communities whose work has advanced DNA foundation models, genomic language modeling, regulatory sequence modeling, and sequence-to-function prediction. This repository builds upon publicly available papers, codebases, pretrained models, datasets, benchmarks, and tutorials released by the broader computational biology, genomics, and machine learning communities.
 
-We are especially grateful to the authors and maintainers of the DNA, RNA, nucleotide, regulatory-sequence, microbial, viral, plant, and cross-domain genome modeling resources curated in this repository. Their open scientific contributions make it possible to compare model architectures, pretraining corpora, evaluation protocols, and biological evidence across this rapidly evolving field.
+We are especially grateful to the authors and maintainers of the DNA, RNA, nucleotide, regulatory-sequence, microbial, viral, plant, and cross-domain genome modeling resources curated in this repository. Their open scientific contributions make it possible to compare model architectures, pretraining corpora, and evaluation protocols across this rapidly evolving field.
 
-We also thank the community members who report missing models, update links, suggest benchmark corrections, improve taxonomy labels, and contribute discussions on what should qualify as a genuinely foundational DNA model. Feedback, issues, and pull requests are highly appreciated and will help keep this resource accurate, transparent, and useful for future research.
+We also thank the community members who report missing models, update links, suggest benchmark corrections, and improve taxonomy labels. Feedback, issues, and pull requests are highly appreciated and will help keep this resource accurate, transparent, and useful for future research.
 
-If this repository is useful to your work, please consider citing the associated manuscript once available and starring the repository to support its continued maintenance.
+If this repository is useful to your work, please consider starring it to support its continued maintenance.
