@@ -22,6 +22,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-05] Update status:** Verified and added the missing AlphaGenome, SUCCEED, and OneGenome-Rice (OGR) model entries, plus the GENEB benchmark and their associated training/evaluation resources. No newer high-confidence model release after 2026-09-04 was identified in the public sources checked today.
 - **[2026-09-04]** Added GeneUnet, an 837M-parameter MLM-pretrained DNA foundation model with 1 Mb context (bioRxiv 2026.08).
 - **[2026-07-09]** Initial README release with the model landscape, corpus catalog, and benchmark map.
 
@@ -44,6 +45,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 - ![Diffusion](https://img.shields.io/badge/Objective-Diffusion-db2777) discrete diffusion or diffusion-style sequence modeling
 - ![Contrastive](https://img.shields.io/badge/Objective-Contrastive-0891b2) species-aware or representation contrast
 - ![Auxiliary](https://img.shields.io/badge/Objective-Auxiliary-475569) additional supervised or biological objectives
+- ![Supervised](https://img.shields.io/badge/Objective-Supervised-16a34a) supervised sequence-to-function or multi-task pretraining
 
 ### Biological scope tags
 
@@ -126,6 +128,9 @@ The table below provides a curated overview of DNA foundation models. Official p
 | Carbon | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![Carbon DNA + RNA corpus](https://img.shields.io/badge/Corpus-Carbon_DNA_%2B_RNA_corpus-4338ca) | 2026.05 | 💻 [Code](https://github.com/huggingface/carbon)<br>🤗 [Model](https://huggingface.co/HuggingFaceBio/Carbon-3B)<br>🤗 [Dataset](https://huggingface.co/datasets/HuggingFaceBio/carbon-pretraining-corpus) |
 | EDEN | ![Generative](https://img.shields.io/badge/Objective-Generative-7c3aed) | ![BaseData metagenomes](https://img.shields.io/badge/Corpus-BaseData_metagenomes-854d0e) | 2026.01 | 📄 [Paper](https://www.biorxiv.org/content/10.64898/2026.01.12.699009v1) |
 | AntigenLM | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![Influenza genomes](https://img.shields.io/badge/Corpus-Influenza_genomes-b91c1c) | 2026.01 | 📄 [Paper](https://openreview.net/forum?id=Y0zPlHDO5p)<br>📄 [arXiv](https://arxiv.org/abs/2602.09067) |
+| AlphaGenome | ![Supervised](https://img.shields.io/badge/Objective-Supervised-16a34a) | ![Human + mouse functional genomics](https://img.shields.io/badge/Corpus-Human_%2B_mouse_functional_genomics-4338ca) | 2026.01 | 📄 [Paper](https://www.nature.com/articles/s41586-025-10014-0)<br>💻 [Code](https://github.com/google-deepmind/alphagenome_research)<br>🌐 [API](https://deepmind.google.com/science/alphagenome/) |
+| SUCCEED | ![Supervised](https://img.shields.io/badge/Objective-Supervised-16a34a) | ![hg38 + ENCODE](https://img.shields.io/badge/Corpus-hg38_%2B_ENCODE-4338ca) | 2026.06 | 📄 [Paper](https://www.nature.com/articles/s41467-026-73129-6)<br>💻 [Code](https://github.com/bioczsun/SUCCEED) |
+| OneGenome-Rice (OGR) | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![422 rice genomes](https://img.shields.io/badge/Corpus-422_rice_genomes-65a30d) | 2026.05 | 📄 [Paper](https://www.biorxiv.org/content/10.64898/2026.04.21.719822v2)<br>💻 [Code](https://github.com/BGI-Plant/OneGenome-Rice)<br>🤗 [Model](https://huggingface.co/ZhejiangLab/OneGenome-Rice) |
 | DNA-MFM | ![MLM + multimodal](https://img.shields.io/badge/Objective-MLM_%2B_multimodal-475569) | ![EnformerCelltyping DNA + chromatin](https://img.shields.io/badge/Corpus-EnformerCelltyping_DNA_%2B_chromatin-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.19.745697)<br>💻 [Code](https://github.com/Yukyin/dna-mfm) |
 | RegFM | ![MLM + supervised](https://img.shields.io/badge/Objective-MLM_%2B_supervised-475569) | ![ENCODE + CELLxGENE](https://img.shields.io/badge/Corpus-ENCODE_%2B_CELLxGENE-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.17.744355)<br>💻 [Code](https://github.com/ZjGaothu/RegFM)<br>📘 [Tutorial](https://github.com/ZjGaothu/RegFM/blob/main/RegFM_geneexp_predict_demo.ipynb)<br>🤗 [Model](https://huggingface.co/Deku21/RegFM) |
 | GeneUnet | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![OpenGenome2](https://img.shields.io/badge/Corpus-OpenGenome2-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.13.744387) |
@@ -174,6 +179,8 @@ The table below lists representative genomic pretraining corpora and data resour
 | Carbon pretraining corpus | Open DNA and RNA corpus with about 173 million sequences and 1.1 trillion nucleotides across eukaryotic, prokaryotic, mRNA, and splice-aware subsets. | 🤗 [Dataset](https://huggingface.co/datasets/HuggingFaceBio/carbon-pretraining-corpus) |
 | 149-genome rice pangenome | Oryza sativa pangenome used to train OryzaG3 for rice-specific sequence generation and representation learning. | 📄 [OryzaG3 paper](https://www.biorxiv.org/content/10.64898/2026.05.22.727045v1)<br>📄 [Pangenome resource](https://pmc.ncbi.nlm.nih.gov/articles/PMC12176639/) |
 | BaseData metagenomes | Large metagenomic collection described as EDEN's training source; the underlying sequence corpus and access conditions are not publicly specified. | 📄 [EDEN paper](https://www.biorxiv.org/content/10.64898/2026.01.12.699009v1) |
+| ENCODE 6,389 functional genomics tracks | Human hg38-aligned DNase-seq, ATAC-seq, TF ChIP-seq, and histone-modification tracks used for supervised multi-task pretraining of SUCCEED. | 📄 [SUCCEED paper](https://www.nature.com/articles/s41467-026-73129-6)<br>💻 [Target metadata](https://github.com/bioczsun/SUCCEED/blob/main/data/target_6389.txt) |
+| 422-genome rice pangenome | QC-filtered cultivated and wild Oryza assemblies used to pretrain OneGenome-Rice (OGR). | 📄 [OGR paper](https://www.biorxiv.org/content/10.64898/2026.04.21.719822v2)<br>💻 [Project](https://github.com/BGI-Plant/OneGenome-Rice) |
 
 ## Benchmarks and Evaluation
 
@@ -200,6 +207,8 @@ The table below lists representative benchmarks and evaluation resources for gen
 | DeepSEA / Enformer-style | 2015.08 / 2021.10 | Functional genomics prediction | 1 kb to 196 kb | 📄 [DeepSEA paper](https://www.nature.com/articles/nmeth.3547)<br>🌐 [DeepSEA server](https://deepsea.princeton.edu/)<br>📄 [Enformer paper](https://www.nature.com/articles/s41592-021-01252-x)<br>💻 [Enformer code](https://github.com/google-deepmind/deepmind-research/tree/master/enformer) |
 | Variant-effect and clinical benchmarks | 2013.11-2025.01 | Variant-effect prediction | Local windows to hundreds kb | 🌐 [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)<br>🌐 [CAGI](https://genomeinterpretation.org/)<br>📦 [MaveDB](https://www.mavedb.org/) |
 | NABench | 2025.11 | Fitness prediction | Assay-dependent | 📄 [Paper](https://arxiv.org/abs/2511.02888)<br>💻 [Code/Data](https://github.com/mrzzmrzz/NABench) |
+| GENEB | 2026.06 | Frozen-embedding genomic classification | Task-dependent | 📄 [Paper](https://arxiv.org/abs/2606.04525)<br>💻 [Code](https://github.com/darlednik/GENEB)<br>🤗 [Tasks](https://huggingface.co/datasets/darlednik/geneb-tasks)<br>🏆 [Leaderboard](https://huggingface.co/spaces/darlednik/geneb-leaderboard) |
+| RiceBenchmark | 2026.05 | Rice functional genomics and precision-breeding tasks | Task-dependent | 📄 [OGR paper](https://www.biorxiv.org/content/10.64898/2026.04.21.719822v2)<br>💻 [Code](https://github.com/BGI-Plant/OneGenome-Rice)<br>🤗 [Data](https://huggingface.co/datasets/ZhejiangLab/RiceBenchmark) |
 
 ## Contributing
 
