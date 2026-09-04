@@ -22,6 +22,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-04]** Added GeneUnet, an 837M-parameter MLM-pretrained DNA foundation model with 1 Mb context (bioRxiv 2026.08).
 - **[2026-07-09]** Initial README release with the model landscape, corpus catalog, and benchmark map.
 
 ## Contents
@@ -125,6 +126,7 @@ The table below provides a curated overview of DNA foundation models. Official p
 | Carbon | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![Carbon DNA + RNA corpus](https://img.shields.io/badge/Corpus-Carbon_DNA_%2B_RNA_corpus-4338ca) | 2026.05 | 💻 [Code](https://github.com/huggingface/carbon)<br>🤗 [Model](https://huggingface.co/HuggingFaceBio/Carbon-3B)<br>🤗 [Dataset](https://huggingface.co/datasets/HuggingFaceBio/carbon-pretraining-corpus) |
 | EDEN | ![Generative](https://img.shields.io/badge/Objective-Generative-7c3aed) | ![BaseData metagenomes](https://img.shields.io/badge/Corpus-BaseData_metagenomes-854d0e) | 2026.01 | 📄 [Paper](https://www.biorxiv.org/content/10.64898/2026.01.12.699009v1) |
 | AntigenLM | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![Influenza genomes](https://img.shields.io/badge/Corpus-Influenza_genomes-b91c1c) | 2026.01 | 📄 [Paper](https://openreview.net/forum?id=Y0zPlHDO5p)<br>📄 [arXiv](https://arxiv.org/abs/2602.09067) |
+| GeneUnet | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![OpenGenome2](https://img.shields.io/badge/Corpus-OpenGenome2-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.13.744387) |
 
 
 ## Pretraining Corpora
