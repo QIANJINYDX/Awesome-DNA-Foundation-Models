@@ -22,6 +22,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-04]** Added GeneUnet, an 837M-parameter MLM-pretrained DNA foundation model with 1 Mb context (bioRxiv 2026.08).
 - **[2026-07-09]** Initial README release with the model landscape, corpus catalog, and benchmark map.
 
 ## Contents
@@ -127,6 +128,7 @@ The table below provides a curated overview of DNA foundation models. Official p
 | AntigenLM | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![Influenza genomes](https://img.shields.io/badge/Corpus-Influenza_genomes-b91c1c) | 2026.01 | 📄 [Paper](https://openreview.net/forum?id=Y0zPlHDO5p)<br>📄 [arXiv](https://arxiv.org/abs/2602.09067) |
 | DNA-MFM | ![MLM + multimodal](https://img.shields.io/badge/Objective-MLM_%2B_multimodal-475569) | ![EnformerCelltyping DNA + chromatin](https://img.shields.io/badge/Corpus-EnformerCelltyping_DNA_%2B_chromatin-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.19.745697)<br>💻 [Code](https://github.com/Yukyin/dna-mfm) |
 | RegFM | ![MLM + supervised](https://img.shields.io/badge/Objective-MLM_%2B_supervised-475569) | ![ENCODE + CELLxGENE](https://img.shields.io/badge/Corpus-ENCODE_%2B_CELLxGENE-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.17.744355)<br>💻 [Code](https://github.com/ZjGaothu/RegFM)<br>📘 [Tutorial](https://github.com/ZjGaothu/RegFM/blob/main/RegFM_geneexp_predict_demo.ipynb)<br>🤗 [Model](https://huggingface.co/Deku21/RegFM) |
+| GeneUnet | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![OpenGenome2](https://img.shields.io/badge/Corpus-OpenGenome2-4338ca) | 2026.08 | 📄 [Paper](https://doi.org/10.64898/2026.08.13.744387) |
 
 
 ## Pretraining Corpora
