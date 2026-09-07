@@ -8,6 +8,9 @@
 
 [![Project Page](https://img.shields.io/badge/Project_Page-live-0f766e)](https://sii-agi4s.github.io/Awesome-DNA/)
 [![Contributions](https://img.shields.io/badge/Contributions-welcome-16a34a)](#contributing)
+[![Models](https://img.shields.io/badge/Models-86-7c3aed)](#dna-foundation-models)
+[![Pretraining Datasets](https://img.shields.io/badge/Pretraining_Datasets-52-0f766e)](#pretraining-corpora)
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-32-db2777)](#benchmarks-and-evaluation)
 
 **A curated resource for DNA foundation models, genomic pretraining corpora, and evaluation benchmarks.**
 
