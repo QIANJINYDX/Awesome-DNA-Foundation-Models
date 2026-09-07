@@ -8,9 +8,9 @@
 
 [![Project Page](https://img.shields.io/badge/Project_Page-live-0f766e)](https://sii-agi4s.github.io/Awesome-DNA/)
 [![Contributions](https://img.shields.io/badge/Contributions-welcome-16a34a)](#contributing)
-[![Models](https://img.shields.io/badge/Models-86-7c3aed)](#dna-foundation-models)
-[![Pretraining Datasets](https://img.shields.io/badge/Pretraining_Datasets-52-0f766e)](#pretraining-corpora)
-[![Benchmarks](https://img.shields.io/badge/Benchmarks-32-db2777)](#benchmarks-and-evaluation)
+[![Models](https://img.shields.io/badge/Models-88-7c3aed)](#dna-foundation-models)
+[![Pretraining Datasets](https://img.shields.io/badge/Pretraining_Datasets-53-0f766e)](#pretraining-corpora)
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-33-db2777)](#benchmarks-and-evaluation)
 
 **A curated resource for DNA foundation models, genomic pretraining corpora, and evaluation benchmarks.**
 
@@ -25,6 +25,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-07] Update status:** Added the missing Plant DNA LLMs (PDLLMs) and PlantHelixSeek model families, their plant-reference-genome and fine-tuning dataset resource, the DNALLM-Suite toolkit, and the DNALLM Mark leaderboard. Counts now reflect 88 models, 53 pretraining datasets/corpora, and 33 benchmarks.
 - **[2026-09-07] Update status:** Added the missing OpticalDNA, GenART, and SparseDNA model families; catalogued OpticalDNA's released HG38/Rice checkpoints, GenART's 53-billion-nucleotide multispecies pretraining corpus, and the OpticalDNA-associated RiceSubBench and RiceWGPB evaluation resources. GenART and SparseDNA reuse established NT/GUE evaluation tasks rather than introducing standalone benchmarks. The public sources checked today did not reveal a newer high-confidence DNA foundation model, pretraining corpus, or benchmark after the 2026-09-06 audit.
 - **[2026-09-06] Update status:** Expanded today's missing-resource audit with CENO, ARSENAL, FishMamba-1, GenNA, PlantGFM, PlasmidGPT, PlasmidLM, Porcine MutBERT, and PlantGeneAnn; added six associated pretraining corpora plus DNA Benchmarks, GFMBench-API, PorcineBench, and the Tokenization-to-Transfer evaluation. No newer high-confidence DNA foundation model release after 2026-09-05 was identified in the public sources checked today.
 - **[2026-09-05] Update status:** Follow-up audit added the missing Genos-m and BacLM model entries, the Genos-m microbial corpus and BacCorpus resources, and the BacBench, RloopBench, GENATATOR, and Evo 2 viral-genome benchmarks. Earlier today, AlphaGenome, SUCCEED, OneGenome-Rice (OGR), GENEB, and their associated resources were added. No newer high-confidence model release after 2026-09-04 was identified in the public sources checked today.
@@ -36,6 +37,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 - [Tag Legend](#tag-legend)
 - [DNA Foundation Models](#dna-foundation-models)
 - [Pretraining Corpora](#pretraining-corpora)
+- [DNA LLM Suites and Toolkits](#dna-llm-suites-and-toolkits)
 - [Benchmarks and Evaluation](#benchmarks-and-evaluation)
 - [Contributing](#contributing)
 - [Acknowledgements](#acknowledgements)
@@ -153,6 +155,8 @@ The table below provides a curated overview of DNA foundation models. Official p
 | OpticalDNA | ![Visual OCR + multimodal](https://img.shields.io/badge/Objective-Visual_OCR_%2B_multimodal-475569) | ![HG38 + rice genomic documents](https://img.shields.io/badge/Corpus-HG38_%2B_rice_genomic_documents-4338ca) | 2026.08 | 📄 [Paper](https://arxiv.org/abs/2602.02014)<br>💻 [Code](https://github.com/HongxinXiang/OpticalDNA)<br>🤗 [HG38 Model](https://huggingface.co/hxxiang/opticaldna-hg38-2048)<br>🤗 [Rice Model](https://huggingface.co/hxxiang/opticaldna-rice-2048) |
 | GenART | ![MLM + adaptive tokenization](https://img.shields.io/badge/Objective-MLM_%2B_adaptive_tokenization-475569) | ![15,844 species, 53B nt](https://img.shields.io/badge/Corpus-15%2C844_species%2C_53B_nt-0f766e) | 2026.07 | 📄 [Paper](https://doi.org/10.1016/j.crmeth.2026.101516)<br>💻 [Code](https://github.com/XMUDM/GenART)<br>📦 [Models/Data](https://github.com/XMUDM/GenART#datasets) |
 | SparseDNA | ![CLM + sparse MoE](https://img.shields.io/badge/Objective-CLM_%2B_sparse_MoE-475569) | ![Human reference genome](https://img.shields.io/badge/Corpus-Human_reference_genome-15803d) | 2026.05 | 📄 [Paper](https://doi.org/10.1007/978-981-92-0369-7_5)<br>📄 [Author manuscript](https://xmudm.github.io/files/Xie26Dasfaa.pdf)<br>💻 [Code](https://github.com/xzh-17/SparseDNA) |
+| Plant DNA LLMs (PDLLMs) | ![MLM + CLM](https://img.shields.io/badge/Objective-MLM_%2B_CLM-9333ea) | ![Plant reference genomes](https://img.shields.io/badge/Corpus-Plant_reference_genomes-65a30d) | 2024.10 | 💻 [Code](https://github.com/zhangtaolab/Plant_DNA_LLMs)<br>🤗 [Model Collection](https://huggingface.co/collections/zhangtaolab/plant-foundation-models) |
+| PlantHelixSeek | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![Plant reference genomes](https://img.shields.io/badge/Corpus-Plant_reference_genomes-65a30d) | 2026.08 | 💻 [Code](https://github.com/zhangtaolab/PlantHelixSeek)<br>🤗 [Model](https://huggingface.co/zhangtaolab/PlantHelixSeek) |
 
 
 ## Pretraining Corpora
@@ -205,6 +209,7 @@ The table below lists representative genomic pretraining corpora and data resour
 | DNA Benchmarks collection | Model-agnostic collection combining genome-scale human and rice tiling datasets, long-range/eQTL data, Genomic Benchmarks, and Nucleotide Transformer downstream tasks in reproducible official and standardized raw layouts. | 🤗 [Dataset](https://huggingface.co/datasets/hxxiang/dna_benchmarks)<br>📄 [Associated paper](https://arxiv.org/abs/2602.02014) |
 | OpticalDNA HG38/Rice pretraining inputs | Human HG38 and rice NIP-T2T genome documents rendered into visual pages for OpticalDNA pretraining and released checkpoint reproduction. | 💻 [Data preparation](https://github.com/HongxinXiang/OpticalDNA#-5-data-preparation)<br>🤗 [DNA Benchmarks](https://huggingface.co/datasets/hxxiang/dna_benchmarks) |
 | GenART multispecies corpus | Approximately 53 billion nucleotides from 15,844 species used for masked pretraining with learned variable-length genomic token boundaries; the complete source corpus is described by the authors but is not packaged as a standalone public dataset. | 📄 [Paper](https://doi.org/10.1016/j.crmeth.2026.101516)<br>💻 [Code and checkpoints](https://github.com/XMUDM/GenART) |
+| Plant reference genomes and fine-tuning datasets | Plant reference genomes used by the PDLLM model family, plus nine released multi-species plant genomic datasets for downstream fine-tuning. | 💻 [Dataset index](https://github.com/zhangtaolab/Plant_DNA_LLMs/blob/main/docs/en/resources/pretrain_models.md)<br>🤗 [Hugging Face datasets](https://huggingface.co/zhangtaolab/datasets)<br>🧩 [ModelScope datasets](https://www.modelscope.cn/search?page=1&search=zhangtaolab&type=dataset) |
 | ARSENAL regulatory corpus | ENCODE candidate cis-regulatory elements used for targeted short-context masked pretraining with motif-discovery regularization. | 📄 [Paper](https://doi.org/10.64898/2026.02.05.703637)<br>💻 [Code](https://github.com/kundajelab/regulatory_lm)<br>📦 [Models/Data](https://sageb.io/ydjhqM) |
 | Cypri-24 | Approximately 28.8 Gb of genome assemblies from 24 representative Cypriniformes species, used to pretrain FishMamba-1 on 15 billion tokens. | 📄 [Paper](https://doi.org/10.64898/2026.03.09.710409)<br>💻 [Preparation code](https://github.com/lu1000001/FishMamba) |
 | GenNA nucleotide-text corpus | Approximately 416 billion characters from gene-associated genomic DNA and RNA across 2,221 RefSeq eukaryotic species, paired with functional text, species metadata, and structured annotations. | 📄 [Paper](https://doi.org/10.64898/2026.04.22.720063)<br>💻 [Preparation code](https://github.com/DrBlackZJU/GenNA) |
@@ -212,6 +217,12 @@ The table below lists representative genomic pretraining corpora and data resour
 | PlasmidLM Addgene corpus | Approximately 108,000 plasmid sequences from Addgene, paired with biological component specifications for prompt-conditioned autoregressive modeling and post-training. | 📄 [Paper](https://doi.org/10.64898/2026.05.19.725242)<br>🤗 [Model card](https://huggingface.co/McClain/PlasmidLM) |
 | PlasmidGPT Addgene corpus | 153,208 engineered plasmid sequences from Addgene, used for decoder-only autoregressive pretraining, embedding learning, plasmid annotation, and controlled generation. | 📄 [Paper](https://doi.org/10.1126/sciadv.aee6916)<br>💻 [Code](https://github.com/lingxusb/PlasmidGPT)<br>📦 [Weights/Data](https://doi.org/10.5281/zenodo.19020226) |
 | Porcine MutBERT Pig-Ref/Pig-Var | Sscrofa11.1 reference sequence plus population-aware variants from 40 wild and domestic pigs; each representation covers approximately 2.7 billion bp. | 📄 [Paper](https://doi.org/10.1093/bib/bbag319)<br>💻 [Code/Data](https://github.com/ai4nucleome/pigmutbert) |
+
+## DNA LLM Suites and Toolkits
+
+| Suite | Scope | Links |
+| --- | --- | --- |
+| DNALLM-Suite | Unified APIs for DNA-model loading, fine-tuning, inference, mutagenesis, interpretation, benchmarking, and MCP integration. | 💻 [Code](https://github.com/zhangtaolab/DNALLM)<br>📘 [Documentation](https://zhangtaolab.org/DNALLM/) |
 
 ## Benchmarks and Evaluation
 
@@ -247,6 +258,7 @@ The table below lists representative benchmarks and evaluation resources for gen
 | DNA Benchmarks | 2026.02 / 2026.09 | Model-agnostic genomic representation, long-range/eQTL, and multimodal evaluation | Hundreds bp to genome-scale tiling | 🤗 [Dataset hub](https://huggingface.co/datasets/hxxiang/dna_benchmarks)<br>📄 [Associated paper](https://arxiv.org/abs/2602.02014) |
 | RiceSubBench | 2026.06 | Cross-subspecies rice generalization for genomic representations | Rice genome-scale inputs | 📄 [Paper](https://arxiv.org/abs/2602.02014)<br>💻 [Code/Data](https://github.com/HongxinXiang/OpticalDNA) |
 | RiceWGPB | 2026.06 | Whole-genome rice phenotype prediction | Approximately 400 Mb genomes | 📄 [Paper](https://arxiv.org/abs/2602.02014)<br>💻 [Code/Data](https://github.com/HongxinXiang/OpticalDNA) |
+| DNALLM Mark | 2026.08 | Plant and DNA language-model task leaderboard | Task-dependent | 🏆 [Leaderboard](https://dnallmmark.org/)<br>💻 [Suite](https://github.com/zhangtaolab/DNALLM) |
 | GFMBench-API | 2026.02 / 2026.08 | Standardized supervised and zero-shot GFM evaluation across regulatory, variant-effect, and long-range tasks | Task-dependent | 📄 [Paper](https://doi.org/10.64898/2026.02.19.706811)<br>💻 [Code](https://github.com/NVIDIA/GFMBench-api) |
 | PorcineBench | 2026.05 | Porcine chromatin accessibility, CTCF binding, and histone-modification prediction across 21 datasets | 512 bp | 📄 [Paper](https://doi.org/10.1093/bib/bbag319)<br>💻 [Code/Data](https://github.com/ai4nucleome/pigmutbert) |
 | Tokenization-to-Transfer / GFM Random Eval | 2026.04 | Pretraining-vs-random-initialization, tokenization, frozen-representation, and clinical-variant evaluation across 52 tasks | Task-dependent | 📄 [ICLR 2026 paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/2b09bb02b90584e2be94ff3ae09289bc-Abstract-Conference.html)<br>💻 [Code](https://github.com/m42-health/gfm-random-eval) |
