@@ -25,6 +25,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-14]** Audited recent arXiv, bioRxiv, Nature Portfolio, Hugging Face, and GitHub-indexed sources; no additional high-confidence DNA foundation model, standalone pretraining corpus, or benchmark after the 2026-09-13 review was identified. Catalog totals remain: **94 models, 59 corpora, 44 benchmarks**.
 - **[2026-09-13]** Added the T2T-LIN/YAO-LIN benchmark and MarinDNA (including its 1.12B m5.1 model, scaling family, pretraining corpus, and variant-effect evaluations). Catalog totals: **94 models, 59 corpora, 44 benchmarks**.
 
 <details>
