@@ -78,6 +78,9 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## DNA Foundation Models
 
+<details>
+<summary>Show DNA foundation models</summary>
+
 The table below provides a curated overview of DNA foundation models. Official paper, code, and model links are shown only when verified; unavailable resources are omitted.
 
 | Model | Model Type | Pretraining Corpus | Released | Links |
@@ -178,7 +181,12 @@ The table below provides a curated overview of DNA foundation models. Official p
 | MarinDNA | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![499 RefSeq animals + 108 Zoonomia mammals](https://img.shields.io/badge/Corpus-499_RefSeq_animals_%2B_108_Zoonomia_mammals-0f766e) | 2026.08 | 💻 [Code](https://github.com/Open-Athena/marin-dna)<br>🤗 [m5.1 model](https://huggingface.co/marin-dna/marin-dna-exp135-m5.1)<br>🤗 [Models/Data](https://huggingface.co/collections/marin-dna/a-1b-standard-transformer-rivals-evo-2-40b-on-vep-6a627428aa94a4960c855072)<br>🌐 [Project report](https://openathena.ai/blog/marin-dna/) |
 
 
+</details>
+
 ## Pretraining Corpora
+
+<details>
+<summary>Show pretraining corpora</summary>
 
 The table below lists representative genomic pretraining corpora and data resources.
 
@@ -244,13 +252,23 @@ The table below lists representative genomic pretraining corpora and data resour
 | BOTANIC-1 plant-genome corpus | 7,207,506 redundancy-filtered 8,192-bp windows (about 59 Gbp) sampled from 320 land-plant species spanning 102 families and 48 orders; the paper describes the corpus and assembly manifest, but no standalone corpus package is currently listed. | 📄 [Paper](https://doi.org/10.64898/2026.09.04.749355)<br>🤗 [Model Collection](https://huggingface.co/collections/living-models/botanic1-6a97f4e3c33f3d109a75057d) |
 | MarinDNA m5.1 regional corpus | 443,039,602 reverse-complement-augmented 255-bp sequences across coding, upstream, downstream, enhancer, and ncRNA regions from 499 RefSeq metazoan genomes and 108 Zoonomia mammals; m5.1 saw about 166 billion nucleotide tokens across its staged training lineage. | 🤗 [Dataset collection](https://huggingface.co/collections/marin-dna/a-1b-standard-transformer-rivals-evo-2-40b-on-vep-6a627428aa94a4960c855072)<br>💻 [Data pipeline](https://github.com/Open-Athena/marin-dna/tree/main/snakemake/training_dataset) |
 
+</details>
+
 ## DNA LLM Suites and Toolkits
+
+<details>
+<summary>Show DNA LLM suites and toolkits</summary>
 
 | Suite | Scope | Links |
 | --- | --- | --- |
 | DNALLM-Suite | Unified APIs for DNA-model loading, fine-tuning, inference, mutagenesis, interpretation, benchmarking, and MCP integration. | 💻 [Code](https://github.com/zhangtaolab/DNALLM)<br>📘 [Documentation](https://zhangtaolab.org/DNALLM/) |
 
+</details>
+
 ## Benchmarks and Evaluation
+
+<details>
+<summary>Show benchmarks and evaluation resources</summary>
 
 The table below lists representative benchmarks and evaluation resources for genomic sequence models.
 
@@ -300,6 +318,8 @@ The table below lists representative benchmarks and evaluation resources for gen
 | viral Genomic Understanding Evaluation (vGUE) | 2025.12 | Viral discrimination, genome-type and host prediction, species/subtype typing, lineage classification, and tropism | Reads to complete viral genomes | 📄 [Paper](https://doi.org/10.64898/2025.12.12.693901)<br>💻 [Code/Data](https://github.com/simoRancati/Vir2vec) |
 | BOTANIC-1 Causal Variant Discovery | 2026.09 | Zero-shot signed-likelihood ranking of experimentally validated plant variants against locus-matched candidate SNPs | 545 loci across 14 plant species | 📄 [Paper](https://doi.org/10.64898/2026.09.04.749355) |
 | MarinDNA VEP Evaluations | 2026.05-2026.06 | Pathogenic Mendelian SNVs versus matched common variants, plus endogenous saturation-genome-editing effect classification | 255 bp sequence windows; 25,630 Mendelian and 38,741 SGE variants | 🤗 [Mendelian data](https://huggingface.co/datasets/marin-dna/evals_mendelian_traits)<br>🤗 [SGE data](https://huggingface.co/datasets/marin-dna/evals_sge)<br>💻 [Evaluation code](https://github.com/Open-Athena/marin-dna) |
+
+</details>
 
 ## Contributing
 
