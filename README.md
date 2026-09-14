@@ -8,9 +8,9 @@
 
 [![Project Page](https://img.shields.io/badge/Project_Page-live-0f766e)](https://sii-agi4s.github.io/Awesome-DNA/)
 [![Contributions](https://img.shields.io/badge/Contributions-welcome-16a34a)](#contributing)
-[![Models](https://img.shields.io/badge/Models-108-7c3aed)](#dna-foundation-models)
+[![Models](https://img.shields.io/badge/Models-109-7c3aed)](#dna-foundation-models)
 [![Pretraining Datasets](https://img.shields.io/badge/Pretraining_Datasets-63-0f766e)](#pretraining-corpora)
-[![Benchmarks](https://img.shields.io/badge/Benchmarks-47-db2777)](#benchmarks-and-evaluation)
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-48-db2777)](#benchmarks-and-evaluation)
 
 **A curated resource for DNA foundation models, genomic pretraining corpora, and evaluation benchmarks.**
 
@@ -25,6 +25,7 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
+- **[2026-09-15]** Added DNT, a diploid genomic foundation model with reference-aligned genotype encoding and contrastive phase loss, plus its ClinVar diploid SNV/indel resources and compound-heterozygous benchmark. Catalog totals: **109 models, 63 corpora, 48 benchmarks**. The newly posted maize stress-response model was reviewed but not listed separately because it is an AgroNT adaptation rather than a new pretrained foundation model.
 - **[2026-09-14]** Filled fourteen historical gaps found by rechecking primary papers and released repositories: added VQDNA, CD-GPT, ConvNova, CARMANIA, Deep-Plant, PatchDNA, DNAZEN, MergeDNA, BacHyenaDNA, DNAGPT2, TrinityDNA, NucEL, Nucleotide GPT, and EnCodon (CodonFM); added the DNABERT-2 multi-species, Scorpio Gene-Taxa, Deep-Plant, and CodonFM RefSeq CDS corpora; and added Scorpio Gene-Taxa, the TrinityDNA CDS, and BGCs-Bench evaluations. Catalog totals: **108 models, 63 corpora, 47 benchmarks**.
 - **[2026-09-13]** Added the T2T-LIN/YAO-LIN benchmark and MarinDNA (including its 1.12B m5.1 model, scaling family, pretraining corpus, and variant-effect evaluations). Catalog totals: **94 models, 59 corpora, 44 benchmarks**.
 
@@ -181,6 +182,7 @@ The table below provides a curated overview of DNA foundation models. Official p
 | PlantHelixSeek | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![Plant reference genomes](https://img.shields.io/badge/Corpus-Plant_reference_genomes-65a30d) | 2026.08 | 💻 [Code](https://github.com/zhangtaolab/PlantHelixSeek)<br>🤗 [Model](https://huggingface.co/zhangtaolab/PlantHelixSeek) |
 | BOTANIC-1 | ![MLM](https://img.shields.io/badge/Objective-MLM-2563eb) | ![320 land-plant genomes](https://img.shields.io/badge/Corpus-320_land--plant_genomes-65a30d) | 2026.09 | 📄 [Paper](https://doi.org/10.64898/2026.09.04.749355)<br>🤗 [Models](https://huggingface.co/collections/living-models/botanic1-6a97f4e3c33f3d109a75057d) |
 | MarinDNA | ![CLM](https://img.shields.io/badge/Objective-CLM-7c3aed) | ![499 RefSeq animals + 108 Zoonomia mammals](https://img.shields.io/badge/Corpus-499_RefSeq_animals_%2B_108_Zoonomia_mammals-0f766e) | 2026.08 | 💻 [Code](https://github.com/Open-Athena/marin-dna)<br>🤗 [m5.1 model](https://huggingface.co/marin-dna/marin-dna-exp135-m5.1)<br>🤗 [Models/Data](https://huggingface.co/collections/marin-dna/a-1b-standard-transformer-rivals-evo-2-40b-on-vep-6a627428aa94a4960c855072)<br>🌐 [Project report](https://openathena.ai/blog/marin-dna/) |
+| DNT | ![CLM + contrastive phase loss](https://img.shields.io/badge/Objective-CLM_%2B_contrastive_phase_loss-475569) | ![Diploid human genotype encoding + ClinVar variants](https://img.shields.io/badge/Corpus-Diploid_human_genotypes_%2B_ClinVar_variants-4338ca) | 2026.09 | 📄 [Paper](https://doi.org/10.64898/2026.09.05.749576)<br>💻 [Code](https://github.com/scrcdnai-max/DNT-Diploid-Genomic-Foundation-Model)<br>🤗 [SNV data](https://huggingface.co/datasets/scrc-dnai/clinvar-diploid-snv)<br>🤗 [Indel data](https://huggingface.co/datasets/scrc-dnai/clinvar-diploid-indel) |
 | VQDNA | ![MLM + vector quantization](https://img.shields.io/badge/Objective-MLM_%2B_vector_quantization-475569) | ![135 multi-species genomes](https://img.shields.io/badge/Corpus-135_multi--species_genomes-0f766e) | 2024.05 | 📄 [Paper](https://arxiv.org/abs/2405.10812)<br>💻 [Code](https://github.com/Lupin1998/VQDNA) |
 | CD-GPT | ![CLM + central-dogma pretraining](https://img.shields.io/badge/Objective-CLM_%2B_central--dogma_pretraining-475569) | ![DNA + RNA + protein sequences](https://img.shields.io/badge/Corpus-DNA_%2B_RNA_%2B_protein_sequences-4338ca) | 2024.06 | 📄 [Paper](https://doi.org/10.1101/2024.06.24.600337)<br>💻 [Code/Models](https://github.com/TencentAI4S/CD-GPT) |
 | ConvNova | ![MLM + gated/dilated CNN](https://img.shields.io/badge/Objective-MLM_%2B_gated%2Fdilated_CNN-475569) | ![Human hg38](https://img.shields.io/badge/Corpus-Human_hg38-15803d) | 2025.02 | 📄 [Paper](https://arxiv.org/abs/2502.18538)<br>💻 [Code](https://github.com/aim-uofa/ConvNova) |
@@ -304,6 +306,7 @@ The table below lists representative benchmarks and evaluation resources for gen
 | DNALONGBENCH | 2025.01 / 2025.11 | Long-range regulatory prediction | 10 kb to 1 Mb | 📄 [Paper](https://doi.org/10.1038/s41467-025-65077-4)<br>💻 [Code/Data](https://github.com/ma-compbio/DNALONGBENCH) |
 | Benchmarking DNA FMs | 2024.08 / 2025.11 | Cross-task embedding benchmark | 64 bp to 500 kb | 📄 [Paper](https://doi.org/10.1038/s41467-025-65823-8)<br>📄 [Preprint](https://doi.org/10.1101/2024.08.16.608288) |
 | T2T-LIN / YAO-LIN Benchmark | 2026.09 | Reference-aware genome interpretation and variant-discovery benchmark | Near-complete human genome, including repetitive and structurally complex regions | 📄 [Paper](https://doi.org/10.64898/2026.09.07.749735) |
+| DNT compound-heterozygous benchmark | 2026.09 | Diploid phase and compound-heterozygote discrimination | Variant-centred diploid sequence windows | 📄 [Paper](https://doi.org/10.64898/2026.09.05.749576)<br>💻 [Code](https://github.com/scrcdnai-max/DNT-Diploid-Genomic-Foundation-Model)<br>🤗 [SNV data](https://huggingface.co/datasets/scrc-dnai/clinvar-diploid-snv)<br>🤗 [Indel data](https://huggingface.co/datasets/scrc-dnai/clinvar-diploid-indel) |
 | GUANinE v1.1 | 2026.08 | Sequence-to-function prediction, variant effects, and biological generalization | Task-dependent | 📄 [Paper](https://doi.org/10.1093/bioinformatics/btag427)<br>💻 [Code/Data](https://github.com/ni-lab/guanine)<br>🤗 [Data](https://huggingface.co/guanine)<br>📘 [Tutorial](https://guanine.readthedocs.io/en/latest/) |
 | Plant Genomic Benchmark (PGB) | 2024.06 | Plant regulatory, RNA-processing, and expression prediction | Task-dependent | 📄 [Paper](https://www.nature.com/articles/s42003-024-06465-2)<br>🤗 [Data](https://huggingface.co/datasets/InstaDeepAI/plant-genomic-benchmark) |
 | OmniGenBench | 2025.05 | Modular cross-task and cross-model genomic evaluation | Task-dependent | 📄 [Paper](https://arxiv.org/abs/2505.14402)<br>💻 [Code](https://github.com/COLA-Laboratory/OmniGenBench)<br>🌐 [Project](https://omnigenbench.com/) |
