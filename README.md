@@ -30,6 +30,10 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 - **[2026-10-03]** Added Mendel, its documented variation resource, and Parnet with associated resources; totals reached **136 models, 89 corpora, and 78 benchmarks**.
 - **[2026-10-02]** Added LOAM, NucleoBench, and CROSSHOST; totals reached **134 models, 87 corpora, and 76 benchmarks**.
 - **[2026-10-01]** Audited new model, privacy, and single-cell candidates without adding a new catalog family; totals remained **133 models, 86 corpora, and 74 benchmarks**.
+
+<details>
+<summary>Updates before 2026-10-01</summary>
+
 - **[2026-09-30]** Added BarcodeMAE+ and its BIOSCAN-5M resource while refreshing existing evaluation links; totals remained **133 models, 86 corpora, and 74 benchmarks**.
 - **[2026-09-29]** Added RNASeek and its public resources; totals reached **132 models, 85 corpora, and 74 benchmarks**.
 - **[2026-09-28]** Verified the public BOTANIC-1 pretraining release and screened out non-catalog candidates; totals remained **131 models, 84 corpora, and 73 benchmarks**.
@@ -54,6 +58,8 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 - **[2026-09-09]** Added BOTANIC-1, its plant-genome corpus, and its causal-variant benchmark; totals reached **90 models, 55 corpora, and 35 benchmarks**.
 - **[2026-09-08]** Added Pleiades, ViroBench, and EvoLen with their associated resources; totals reached **90 models, 55 corpora, and 35 benchmarks**.
 - **[2026-09-07]** Added Plant DNA LLMs, PlantHelixSeek, DNALLM-Suite, OpticalDNA, GenART, SparseDNA, and related resources.
+
+</details>
 
 <details>
 <summary>Detailed update history</summary>
