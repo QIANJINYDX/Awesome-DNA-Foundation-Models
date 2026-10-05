@@ -25,9 +25,35 @@ This repository collects links and metadata for **DNA Foundation Models (DNAFMs)
 
 ## News
 
-- **[2026-10-05]** Updated JEPA-DNA and DNT metadata, recorded `seqcontrol` as a non-counted evaluation resource, and found no new high-confidence catalog entry; totals remain **136 models, 89 corpora, and 78 benchmarks**.
-
-- **[2026-10-04]** Screened the newest arXiv, bioRxiv, GitHub, and Hugging Face candidates and found no new high-confidence model, corpus, or benchmark; totals remain **136 models, 89 corpora, and 78 benchmarks**.
+- **[2026-10-05]** Updated JEPA-DNA and DNT metadata and recorded `seqcontrol` as a non-counted evaluation resource; totals remain **136 models, 89 corpora, and 78 benchmarks**.
+- **[2026-10-04]** Screened the newest candidates and found no new high-confidence model, corpus, or benchmark; totals remain **136 models, 89 corpora, and 78 benchmarks**.
+- **[2026-10-03]** Added Mendel, its documented variation resource, and Parnet with associated resources; totals reached **136 models, 89 corpora, and 78 benchmarks**.
+- **[2026-10-02]** Added LOAM, NucleoBench, and CROSSHOST; totals reached **134 models, 87 corpora, and 76 benchmarks**.
+- **[2026-10-01]** Audited new model, privacy, and single-cell candidates without adding a new catalog family; totals remained **133 models, 86 corpora, and 74 benchmarks**.
+- **[2026-09-30]** Added BarcodeMAE+ and its BIOSCAN-5M resource while refreshing existing evaluation links; totals remained **133 models, 86 corpora, and 74 benchmarks**.
+- **[2026-09-29]** Added RNASeek and its public resources; totals reached **132 models, 85 corpora, and 74 benchmarks**.
+- **[2026-09-28]** Verified the public BOTANIC-1 pretraining release and screened out non-catalog candidates; totals remained **131 models, 84 corpora, and 73 benchmarks**.
+- **[2026-09-27]** Screened out BreCol, HyCoSeq, DNAtok, and undocumented Hub releases; totals remained **131 models, 84 corpora, and 73 benchmarks**.
+- **[2026-09-26]** Added MicroGlot and CodonBench with their associated resources; totals reached **131 models, 84 corpora, and 73 benchmarks**.
+- **[2026-09-25]** Audited tokenizer, adaptation, tooling, and closed-set candidates without adding a new independent family; totals remained **130 models, 83 corpora, and 71 benchmarks**.
+- **[2026-09-24]** Added the LOCALE SRA retrieval benchmark and training resource; totals remained **130 models, 83 corpora, and 71 benchmarks**.
+- **[2026-09-23]** Added Minerva-MLM and its mixed-genome training resource; totals reached **130 models, 82 corpora, and 70 benchmarks**.
+- **[2026-09-22]** Added GenoME and its multimodal training and evaluation resources; totals reached **129 models, 81 corpora, and 70 benchmarks**.
+- **[2026-09-21]** Recovered BarcodeBERT, BarcodeMamba, BarcodeMamba+, and mtDNA-FM with their resources; totals reached **128 models, 80 corpora, and 69 benchmarks**.
+- **[2026-09-20]** Added HViLM, FishCaduceus, and BatatasLM with their public resources; totals reached **124 models, 77 corpora, and 66 benchmarks**.
+- **[2026-09-19]** Recovered GPN resources, GV-Rep, and TraitGym while screening out downstream systems; totals reached **121 models, 74 corpora, and 62 benchmarks**.
+- **[2026-09-18]** Added FungiHelixSeek and recovered C3P with their corpora and evaluations; totals reached **121 models, 72 corpora, and 60 benchmarks**.
+- **[2026-09-17]** Added Shorkie, EVA, EukaUTR, and miRBench and refreshed GenomeOcean; totals reached **119 models, 70 corpora, and 58 benchmarks**.
+- **[2026-09-16]** Added RIBOSPAN, MIMIC, Orthrus, Helix-mRNA, DGRNA, and related resources; totals reached **116 models, 67 corpora, and 54 benchmarks**.
+- **[2026-09-15]** Added Mnemos-DNA, TomatoPGFM, DNT resources, and refreshed GenoJEPA; totals reached **111 models, 65 corpora, and 50 benchmarks**.
+- **[2026-09-14]** Filled fourteen historical model gaps and added related corpora and evaluations; totals reached **108 models, 63 corpora, and 47 benchmarks**.
+- **[2026-09-13]** Added MarinDNA and the T2T-LIN/YAO-LIN benchmark; totals reached **94 models, 59 corpora, and 44 benchmarks**.
+- **[2026-09-12]** Updated PlantCAD2 and added GENERator Sequence Recovery, Carbon Perturbation Bench, and Synthetic Genomes Benchmark; totals reached **93 models, 58 corpora, and 42 benchmarks**.
+- **[2026-09-11]** Added GenomeQA and PhageBench with released data and evaluation code; totals reached **93 models, 58 corpora, and 39 benchmarks**.
+- **[2026-09-10]** Updated GPN-Star and LAMBDA and added several model, corpus, and evaluation resources; totals reached **93 models, 58 corpora, and 37 benchmarks**.
+- **[2026-09-09]** Added BOTANIC-1, its plant-genome corpus, and its causal-variant benchmark; totals reached **90 models, 55 corpora, and 35 benchmarks**.
+- **[2026-09-08]** Added Pleiades, ViroBench, and EvoLen with their associated resources; totals reached **90 models, 55 corpora, and 35 benchmarks**.
+- **[2026-09-07]** Added Plant DNA LLMs, PlantHelixSeek, DNALLM-Suite, OpticalDNA, GenART, SparseDNA, and related resources.
 
 <details>
 <summary>Detailed update history</summary>
